@@ -51,7 +51,7 @@ public class Week6Assignment {
 			ByteArrayInputStream byteIn = new ByteArrayInputStream(bytes);
 			ObjectInputStream objIn = new ObjectInputStream(byteIn);
 			String str[] = (String[]) objIn.readObject();
-			
+			objIn.close();
 
 			return str[str.length-1];
 			
